@@ -1,0 +1,2 @@
+//Background from MAXGIF //maxgif.com
+(function(){var e,i;i=["/img/404/B3.gif","/img/404/Anc.gif","/img/404/Dn9.gif","/img/404/DnM.gif","/img/404/DnP.gif","/img/404/Dnq.gif"],e=i[Math.floor(Math.random()*i.length)],document.body.style.backgroundImage="url("+e+")",document.body.className+=" fourohfour"}).call(this);
