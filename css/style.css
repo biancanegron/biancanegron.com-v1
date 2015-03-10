@@ -212,6 +212,7 @@ body * .ls-container .ls-webkit-hack,
 .contact-section form input{width:100%;}
 .row.featurette .col-md-5{position:relative;margin-bottom:35px;right:auto;float:right;}
 .navbar-nav > li.resume{padding:0;margin-left:0;}.navbar-nav > li.resume > a{padding:10px 15px;background-color:#3498DB;border-radius:0;}
+body.fourohfour #fourohfour h1{font-size:10em;margin-top:60px;}
 }
 
 /*CUSTOM QUERY*/
