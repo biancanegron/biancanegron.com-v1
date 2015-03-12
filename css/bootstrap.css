@@ -4377,7 +4377,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     margin-left: 15px;
   }
   .navbar-custom .navbar-brand{  
-  background-size: 100% auto;margin-top: 9px;}
+  background-size: 100% auto;margin-top:17px;}
 }
 
 .navbar-default {
@@ -4385,19 +4385,25 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-color: #e7e7e7;
 }
 
+.navbar-custom .navbar-brand{  
+  width: 300px;
+  height: 45px;
+  background-image:url(../img/bianca-logo.svg);
+  background-repeat: no-repeat;
+  display: block;
+  margin-left: 20px;
+  -webkit-background-size: 300px auto;
+  -moz-background-size: 300px auto;
+  -o-background-size: 300px auto;
+  background-size: 300px auto;
+}
+
 /*Biancas Custom Navbar Background Color
 .navbar-custom{background-color:#2a303c;}*/
 @media (min-width: 300px) and (max-width: 767px) {
  .navbar-custom/*{background-color: #098491;}*/{background-color:#3498DB;}
- .navbar-custom .navbar-brand{background-size:100% auto;margin-top: 17px;}
- .navbar-brand {width:200px;float: left;height:45px;}
-}
-
-.navbar-custom .navbar-brand{  
-  background-image:url(../img/logo-hi.png);
-  background-repeat: no-repeat;
-  display: block;
-  margin-left: 20px;
+ .navbar-custom .navbar-brand{background-size:100% auto;width:200px;height:25px;margin-top:22px;}
+ .navbar-brand {float: left;}
 }
 
 .navbar-default .navbar-brand {
