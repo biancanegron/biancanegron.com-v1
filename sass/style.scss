@@ -358,6 +358,9 @@ footer {
 		}
 } 
 
+/*404 Page*/html, body{height:100%;}body.fourohfour{background-repeat:no-repeat;background-size:cover;overflow:hidden;background-position:top center;}body.fourohfour #fourohfour h1{font-size:14em;text-align:center;color:white;line-height:1em;margin-bottom:0;}body.fourohfour #fourohfour h2{color:white;text-align:center;font-size:1.6em;}body.fourohfour footer{position:absolute;bottom:0;z-index:10;width:100%;text-align:center;}body.fourohfour #fourohfour{position:absolute;top:50%;left:50%;z-index:20;}body.fourohfour #fourohfour .container{position:relative;top:-200px;left:-50%;}
+body.fourohfour:before{content:"";display:block;position:fixed;top:0;right:0;bottom:0;left:0;opacity:0.85;z-index:8;background:-webkit-linear-gradient(45deg, #242932, #1f6fa4);background:-moz-linear-gradient(45deg, #242932, #1f6fa4);background:-o-linear-gradient(45deg, #242932, #1f6fa4);background:linear-gradient(45deg, #242932,#1f6fa4);}
+
 @media screen and (min-width: 769px) {
 .project-half { width:50%;float:left; }
 .navigation-icon { display:none; }
