@@ -3,213 +3,192 @@
   <head>
     <meta charset='utf-8'>
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
-    <title>Bianca Negron - Web Designer &amp; Developer</title>
+      <title>Bianca Negron - Web Designer &amp; Developer</title>
     <meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
     <meta content='yes' name='apple-mobile-web-app-capable'>
     <meta content='Bianca Designs' property='og:title'>
     <meta content='Creating clean, user-friendly and responsive websites and building brand identities. Striving for pixel-perfection.' property='og:description'>
-    <meta content='Creating clean, user-friendly and responsive websites and building brand identities. Striving for pixel-perfection.' name='description'>
     <meta content='Bianca Negron' name='author'>
-    <meta name="keywords" content="design, bianca negron">
-    <link rel="shortcut icon" href="favicon.ico">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <script type="text/javascript" src="//use.typekit.net/taf2tvp.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <style type="text/css">
-    html, body{height:100%;}
-    </style>
+    <meta content='http://biancanegron.com/images/bianca-icon.png' property='og:image'>
+    <meta content='image/png' property='og:image:type'>
+    <meta content='114' property='og:image:width'>
+    <meta content='114' property='og:image:height'>
+    <meta content='design, bianca negron' name='keywords'>
+      <link rel='shortcut icon' href='favicon.ico'>
+      <script src="javascripts/lib/modernizr.js" type="text/javascript"></script>
+      <link href="stylesheets/style.css" media="screen" rel="stylesheet" type="text/css">
+      <script src="//use.typekit.net/taf2tvp.js"></script>
+      <script>try{Typekit.load();}catch(e){}</script>
   </head>
-
   <body>
-    <header class="navbar-wrapper">
+    <header id="header">
       <div class="container">
-
-        <div class="navbar navbar-custom navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/"></a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="about/">About</a></li>
-                <li><a href="work/">Work</a></li>
-                <li><a href="#contact-me">Contact</a></li>
-                <li><a href="resume/biancanegron-resume.pdf">Résumé</a></li>
-              </ul>
-            </div>
-          </div>
+        <a class="header-logo" href="/"></a>
+        <span class="navigation-icon" id="navigation-icon"><button type="button" role="button" aria-label="Toggle Navigation" class="lines-button x2" id="trigger-overlay">
+        <span class="lines"></span>
+        </button></span>
+        <nav class="navigation">
+          <ul>
+            <li><a class="navigation-link" href="/about">About</a></li>
+            <li><a class="navigation-link" href="/work">Work</a></li>
+            <li><a class="navigation-link" href="/resume">Résumé</a></li>
+            <li><a class="navigation-link" href="#contact-me">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="overlay slide-overlay">
+        <nav>
+          <ul>
+            <li><a class="navigation-link" href="/#work">About</a></li>
+            <li><a class="navigation-link" href="/company/">Work</a></li>
+            <li><a class="navigation-link" href="/careers/">Résumé</a></li>
+            <li><a class="navigation-link" href="#contact-me">Contact</a></li>
+          </ul>
+        </nav>
         </div>
-
       </div>
     </header>
 
-<!-- NEW SLIDER -->
+    <!-- NEW SLIDER -->
     <div id="full-slider-wrapper">
-    <div id="layerslider" style="width:100%;height:600px;">
-      <div class="ls-slide" data-ls="slidedelay:7000;transition2d:1;timeshift:-1000;">
-        <img class="ls-l" style="top:33px;left:50%;white-space: nowrap;" data-ls="offsetxin:300;durationin:2000;offsetxout:-1100;parallaxlevel:1;" src="sliderimages/separator1.png" alt="">
-        <img class="ls-l" style="top:80px;left:50%;white-space: nowrap;" data-ls="offsetyin:300;durationin:2000;offsetxout:-900;parallaxlevel:4;" src="sliderimages/welcome-layer.png" alt="">
-        <img class="ls-l" style="top:255px;left:50%;white-space: nowrap;" data-ls="offsetxin:300;durationin:2000;delayin:1000;offsetxout:-1100;parallaxlevel:10;" src="sliderimages/separator2to.png" alt="">
-        <img class="ls-l" style="top:305px;left:50%;white-space: nowrap;" data-ls="offsetyin:300;durationin:2000;delayin:1700;offsetxout:1100;parallaxlevel:10;" src="sliderimages/biancadesigns-layer.png" alt="">
-        <img class="ls-l" style="top:420px;left:175px;white-space: nowrap;" data-ls="offsetxin:-1100;durationin:2000;delayin:2500;offsetxout:1100;parallaxlevel:10;" src="sliderimages/circle-layer1.png" alt="">
-        <img class="ls-l" style="top:420px;left:368px;white-space: nowrap;" data-ls="offsetxin:-1100;durationin:2000;delayin:2600;offsetxout:1100;parallaxlevel:10;" src="sliderimages/circle-layer2.png" alt="">
-        <img class="ls-l" style="top:420px;left:50%;white-space: nowrap;" data-ls="offsetxin:-1100;durationin:2000;delayin:2700;offsetxout:1100;parallaxlevel:10;" src="sliderimages/circle-layer3.png" alt="">
-        <img class="ls-l" style="top:420px;left:755px;white-space: nowrap;" data-ls="offsetxin:-1100;durationin:2000;delayin:2800;offsetxout:1100;parallaxlevel:10;" src="sliderimages/circle-layer4.png" alt="">
-        <img class="ls-l" style="top:420px;left:951px;white-space: nowrap;" data-ls="offsetxin:-1100;durationin:2000;delayin:2900;offsetxout:1100;parallaxlevel:10;" src="sliderimages/circle-layer5.png" alt="">
-        <span class="ls-l ls-linkto-4 glyphicon glyphicon-chevron-left" style="top:50%;left:5%;white-space:nowrap;font-size:15px;" data-ls="offsetxin:-50;delayin:1000;offsetxout:-50;parallaxlevel:3;" alt=""></span><span class="ls-l ls-linkto-2 glyphicon glyphicon-chevron-right" style="top:50%;left:95%;white-space:nowrap;font-size:15px;" data-ls="offsetxin:50;delayin:1000;offsetxout:50;parallaxlevel:3;" alt=""></span>
-      </div><!--slide1-->
-      <div class="ls-slide" data-ls="slidedelay:7000;transition2d:1;timeshift:-1000;">
-        <img class="ls-l" style="top:67px;left:75%;white-space: nowrap;" data-ls="offsetxin:600;durationin:2000;offsetxout:600;parallaxlevel:1;" src="sliderimages/latina-website-layer.png" alt=""><img class="ls-l" style="top:200px;left:520px;white-space: nowrap;" data-ls="offsetxin:900;durationin:2000;offsetxout:900;parallaxlevel:4;" src="sliderimages/latina-mobile-layer.png" alt="">
-        <img class="ls-l" style="top:43px;left:81px;white-space: nowrap;" data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;parallaxlevel:10;" src="sliderimages/slide2-title-layer.png" alt="">
-        <p class="ls-l" style="top:240px;left:90px;font-family:'Proxima-Nova', sans-serif;width:29%;font-size:23px;color:#ffffff;line-height:28px;white-space: normal;" data-ls="offsetxin:0;durationin:2000;delayin:2000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% top 0;offsetxout:-400;parallaxlevel:8;">
-          I strive to create pixel perfected design for clients and use it to hand-code a captivating and responsive website. Turning great ideas into riveting design and code is my forte.
-        </p>
-        <span class="ls-l ls-linkto-1 glyphicon glyphicon-chevron-left" style="top:50%;left:5%;white-space: nowrap;" data-ls="offsetxin:-50;delayin:1000;offsetxout:-50;parallaxlevel:3;" alt=""></span><span class="ls-l ls-linkto-3 glyphicon glyphicon-chevron-right" style="top:50%;left:95%;white-space: nowrap;" data-ls="offsetxin:50;delayin:1000;offsetxout:50;parallaxlevel:3;" alt=""></span>
-      </div><!--slide2-->
-      <div class="ls-slide" data-ls="slidedelay:7000;transition2d:1;timeshift:-1000;">
-        <img class="ls-l" style="top:30px;left:80px;white-space: nowrap;" data-ls="offsetxin:-600;durationin:2000;offsetxout:-600;parallaxlevel:4;" src="sliderimages/shiatsu-bcs-layer.png" alt="">
-        <img class="ls-l" style="top:43px;left:81%;white-space: nowrap;" data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:200;durationout:1000;parallaxlevel:10;" src="sliderimages/slide3-title-layer.png" alt="">
-        <p class="ls-l" style="top:220px;left:75%;font-family:'Proxima-Nova', sans-serif;text-align:right;width:32%;font-size:23px;color:#ffffff;line-height:28px;white-space: normal;" data-ls="offsetxin:0;durationin:2000;delayin:2000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% top 0;offsetxout:400;parallaxlevel:8;">
-          My passion is to make brands and projects come to life through design. I create unique and memorable logos, business cards, letterheads, brochures, flyers, posters, t-shirts, packaging and more for cool folks around the world. </p>
-        <span class="ls-l ls-linkto-2 glyphicon glyphicon-chevron-left" style="top:50%;left:5%;white-space: nowrap;" data-ls="offsetxin:-50;delayin:1000;offsetxout:-50;parallaxlevel:3;" alt=""></span><span class="ls-l ls-linkto-4 glyphicon glyphicon-chevron-right" style="top:50%;left:95%;white-space: nowrap;" data-ls="offsetxin:50;delayin:1000;offsetxout:50;parallaxlevel:3;" alt=""></span>
-      </div><!--slide3-->
-      <div class="ls-slide" data-ls="slidedelay:7000;transition2d:1;timeshift:-1000;">
-        <img class="ls-l" style="top:150px;left:55%;white-space: nowrap;" data-ls="offsetxin:600;durationin:2000;offsetxout:600;parallaxlevel:1;" src="sliderimages/latinaextra-mobile-layer1.png" alt=""><img class="ls-l" style="top:35px;left:78%;white-space: nowrap;" data-ls="offsetxin:900;durationin:2000;offsetxout:900;parallaxlevel:4;" src="sliderimages/latinaextra-mobile-layer2.png" alt="">
-        <img class="ls-l" style="top:43px;left:81px;white-space: nowrap;" data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;parallaxlevel:10;" src="sliderimages/slide4-title-layer.png" alt="">
-        <p class="ls-l" style="top:250px;left:90px;font-family:'Proxima-Nova', sans-serif;width:32%;font-size:23px;color:#ffffff;line-height:28px;white-space: normal;" data-ls="offsetxin:0;durationin:2000;delayin:2000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% top 0;offsetxout:-400;parallaxlevel:8;">
-          Designing and developing simple, user-friendly and innovative interfaces and apps for mobile devices is something I really enjoy.  
-        </p>
-        <span class="ls-l ls-linkto-3 glyphicon glyphicon-chevron-left" style="top:50%;left:5%;white-space:nowrap;" data-ls="offsetxin:-50;delayin:1000;offsetxout:-50;parallaxlevel:3;" alt=""></span><span class="ls-l ls-linkto-1 glyphicon glyphicon-chevron-right" style="top:50%;left:95%;white-space: nowrap;" data-ls="offsetxin:50;delayin:1000;offsetxout:50;parallaxlevel:3;" alt=""></span>
-      </div><!--slide4-->
+      <div id="layerslider" style="width:100%;height:600px;">
+        <div class="ls-slide" data-ls="slidedelay:7000;transition2d:1;timeshift:-1000;">
+          <img class="ls-l" style="top:33px;left:50%;white-space: nowrap;" data-ls="offsetxin:300;durationin:2000;offsetxout:-1100;parallaxlevel:1;" src="sliderimages/separator1.png" alt="">
+          <img class="ls-l" style="top:80px;left:50%;white-space: nowrap;" data-ls="offsetyin:300;durationin:2000;offsetxout:-900;parallaxlevel:4;" src="sliderimages/welcome-layer.png" alt="">
+          <img class="ls-l" style="top:255px;left:50%;white-space: nowrap;" data-ls="offsetxin:300;durationin:2000;delayin:1000;offsetxout:-1100;parallaxlevel:10;" src="sliderimages/separator2to.png" alt="">
+          <img class="ls-l" style="top:305px;left:50%;white-space: nowrap;" data-ls="offsetyin:300;durationin:2000;delayin:1700;offsetxout:1100;parallaxlevel:10;" src="sliderimages/biancadesigns-layer.png" alt="">
+          <img class="ls-l" style="top:420px;left:175px;white-space: nowrap;" data-ls="offsetxin:-1100;durationin:2000;delayin:2500;offsetxout:1100;parallaxlevel:10;" src="sliderimages/circle-layer1.png" alt="">
+          <img class="ls-l" style="top:420px;left:368px;white-space: nowrap;" data-ls="offsetxin:-1100;durationin:2000;delayin:2600;offsetxout:1100;parallaxlevel:10;" src="sliderimages/circle-layer2.png" alt="">
+          <img class="ls-l" style="top:420px;left:50%;white-space: nowrap;" data-ls="offsetxin:-1100;durationin:2000;delayin:2700;offsetxout:1100;parallaxlevel:10;" src="sliderimages/circle-layer3.png" alt="">
+          <img class="ls-l" style="top:420px;left:755px;white-space: nowrap;" data-ls="offsetxin:-1100;durationin:2000;delayin:2800;offsetxout:1100;parallaxlevel:10;" src="sliderimages/circle-layer4.png" alt="">
+          <img class="ls-l" style="top:420px;left:951px;white-space: nowrap;" data-ls="offsetxin:-1100;durationin:2000;delayin:2900;offsetxout:1100;parallaxlevel:10;" src="sliderimages/circle-layer5.png" alt="">
+          <span class="ls-l ls-linkto-4 fa fa-angle-left" style="top:50%;left:5%;white-space:nowrap;" data-ls="offsetxin:-50;delayin:1000;offsetxout:-50;parallaxlevel:3;" alt=""></span><span class="ls-l ls-linkto-2 fa fa-angle-right" style="top:50%;left:95%;white-space:nowrap;" data-ls="offsetxin:50;delayin:1000;offsetxout:50;parallaxlevel:3;" alt=""></span>
+        </div><!--slide1-->
+        <div class="ls-slide" data-ls="slidedelay:7000;transition2d:1;timeshift:-1000;">
+          <img class="ls-l" style="top:67px;left:75%;white-space: nowrap;" data-ls="offsetxin:600;durationin:2000;offsetxout:600;parallaxlevel:1;" src="sliderimages/latina-website-layer.png" alt=""><img class="ls-l" style="top:200px;left:520px;white-space: nowrap;" data-ls="offsetxin:900;durationin:2000;offsetxout:900;parallaxlevel:4;" src="sliderimages/latina-mobile-layer.png" alt="">
+          <img class="ls-l" style="top:43px;left:81px;white-space: nowrap;" data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;parallaxlevel:10;" src="sliderimages/slide2-title-layer.png" alt="">
+          <p class="ls-l" style="top:240px;left:90px;font-family:'Proxima-Nova', sans-serif;width:29%;font-size:23px;color:#ffffff;line-height:28px;white-space: normal;" data-ls="offsetxin:0;durationin:2000;delayin:2000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% top 0;offsetxout:-400;parallaxlevel:8;">
+            I strive to create pixel perfected design for clients and use it to hand-code a captivating and responsive website. Turning great ideas into riveting design and code is my forte.
+          </p>
+          <span class="ls-l ls-linkto-1 fa fa-angle-left" style="top:50%;left:5%;white-space:nowrap;" data-ls="offsetxin:-50;delayin:1000;offsetxout:-50;parallaxlevel:3;" alt=""></span><span class="ls-l ls-linkto-3 glyphicon fa fa-angle-right" style="top:50%;left:95%;white-space:nowrap;" data-ls="offsetxin:50;delayin:1000;offsetxout:50;parallaxlevel:3;" alt=""></span>
+        </div><!--slide2-->
+        <div class="ls-slide" data-ls="slidedelay:7000;transition2d:1;timeshift:-1000;">
+          <img class="ls-l" style="top:30px;left:80px;white-space: nowrap;" data-ls="offsetxin:-600;durationin:2000;offsetxout:-600;parallaxlevel:4;" src="sliderimages/shiatsu-bcs-layer.png" alt="">
+          <img class="ls-l" style="top:43px;left:81%;white-space: nowrap;" data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:200;durationout:1000;parallaxlevel:10;" src="sliderimages/slide3-title-layer.png" alt="">
+          <p class="ls-l" style="top:220px;left:75%;font-family:'Proxima-Nova', sans-serif;text-align:right;width:32%;font-size:23px;color:#ffffff;line-height:28px;white-space: normal;" data-ls="offsetxin:0;durationin:2000;delayin:2000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% top 0;offsetxout:400;parallaxlevel:8;">
+            My passion is to make brands and projects come to life through design. I create unique and memorable logos, business cards, letterheads, brochures, flyers, posters, t-shirts, packaging and more for cool folks around the world. </p>
+          <span class="ls-l ls-linkto-2 fa fa-angle-left" style="top:50%;left:5%;white-space:nowrap;" data-ls="offsetxin:-50;delayin:1000;offsetxout:-50;parallaxlevel:3;" alt=""></span><span class="ls-l ls-linkto-4 fa fa-angle-right" style="top:50%;left:95%;white-space:nowrap;" data-ls="offsetxin:50;delayin:1000;offsetxout:50;parallaxlevel:3;" alt=""></span>
+        </div><!--slide3-->
+        <div class="ls-slide" data-ls="slidedelay:7000;transition2d:1;timeshift:-1000;">
+          <img class="ls-l" style="top:150px;left:55%;white-space: nowrap;" data-ls="offsetxin:600;durationin:2000;offsetxout:600;parallaxlevel:1;" src="sliderimages/latinaextra-mobile-layer1.png" alt=""><img class="ls-l" style="top:35px;left:78%;white-space: nowrap;" data-ls="offsetxin:900;durationin:2000;offsetxout:900;parallaxlevel:4;" src="sliderimages/latinaextra-mobile-layer2.png" alt="">
+          <img class="ls-l" style="top:43px;left:81px;white-space: nowrap;" data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;parallaxlevel:10;" src="sliderimages/slide4-title-layer.png" alt="">
+          <p class="ls-l" style="top:250px;left:90px;font-family:'Proxima-Nova', sans-serif;width:32%;font-size:23px;color:#ffffff;line-height:28px;white-space: normal;" data-ls="offsetxin:0;durationin:2000;delayin:2000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% top 0;offsetxout:-400;parallaxlevel:8;">
+            Designing and developing simple, user-friendly and innovative interfaces and apps for mobile devices is something I really enjoy.  
+          </p>
+          <span class="ls-l ls-linkto-3 fa fa-angle-left" style="top:50%;left:5%;white-space:nowrap;" data-ls="offsetxin:-50;delayin:1000;offsetxout:-50;parallaxlevel:3;" alt=""></span><span class="ls-l ls-linkto-1 fa fa-angle-right" style="top:50%;left:95%;white-space:nowrap;" data-ls="offsetxin:50;delayin:1000;offsetxout:50;parallaxlevel:3;" alt=""></span>
+        </div><!--slide4-->
+      </div>
     </div>
-  </div>
 
-<!-- PROJECTS -->
+    <!-- PROJECTS -->
       <section id="portfolio-short">
-      <div class="container marketing">
+      <div class="container">
       <div class="row">
-      <div class="col-lg-12"><h1>Featured Projects</h1></div>
-      <div class="col-sm-6">
+      <div class="container"><h1>Featured Projects</h1></div>
+      <div class="project-half">
           <div class="mosaic-block bar">
               <div class="mosaic-overlay">
                  <div class="details">
                     <h4>Cash Money Records</h4>
                     <p>Web Design + Dev Direction</p>
-                    <a href="img/cashmoney-full.jpg" id="featured" class="full-size fa-search-plus fancybox-effects-d" alt="Cash Money Web Design"></a>
                     <a href="http://www.cashmoney-records.com/" target="_blank" class="full-size2 fa-link"></a>
                 </div>
               </div>
-             <img src="img/cashmoney-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Web Design by Bianca Negron"/>
+             <img src="images/cashmoney-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Web Design by Bianca Negron"/>
           </div><!--portfolio3-->
         </div><!-- /.col-sm-6 -->
-      <div class="col-sm-6">
+      <div class="project-half">
           <div class="mosaic-block bar">
               <div class="mosaic-overlay">
                  <div class="details">
                     <h4>Sharefund</h4>
                     <p>Front-end Development</p>
-                    <a href="img/sharefund-full.jpg" id="featured" class="full-size fa-search-plus fancybox-effects-d" alt="Front-end Development"></a>
                     <a href="http://sharefund.com" target="_blank" class="full-size2 fa-link"></a>
                 </div>
               </div>
-             <img src="img/sharefund-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Front-end Development by Bianca Negron"/>
+             <img src="images/sharefund-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Front-end Development by Bianca Negron"/>
           </div><!--portfolio00-->
         </div><!-- /.col-sm-6 -->
-        <div class="col-sm-6">
+        <div class="project-half">
                     <div class="mosaic-block bar">
               <div class="mosaic-overlay">
                  <div class="details">
                     <h4>Shiatsu by Melissa</h4>
                     <p>Logo + Web Design + Dev</p>
-                    <a href="img/shiatsu-full.jpg" id="featured" class="full-size fa-search-plus fancybox-effects-d" alt="Web Design - Development"></a>
                     <a href="http://shiatsubymelissa.com/" target="_blank" class="full-size2 fa-link"></a>
                 </div>
               </div>
-             <img src="img/shiatsu-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Web Design/Development by Bianca Negron"/>
+             <img src="images/shiatsu-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Web Design/Development by Bianca Negron"/>
           </div><!--portfolio4-->
         </div><!-- /.col-sm-6 -->
-        <div class="col-sm-6">
+        <div class="project-half">
            <div class="mosaic-block bar">
               <div class="mosaic-overlay">
                  <div class="details">
                     <h4>Thorium</h4>
                     <p>Branding</p>
-                    <!--<a href="#" id="featured" class="full-size fancybox-effects-d" alt="#"></a>
-                    <a href="#" class="full-size2"></a>-->
                 </div>
               </div>
-             <img src="img/thorium-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Logo and Web Design/Development by Bianca Negron"/>
+             <img src="images/thorium-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Logo and Web Design/Development by Bianca Negron"/>
           </div><!--portfolio0-->
         </div><!-- /.col-sm-6 -->
-      <div class="col-sm-6">
+      <div class="project-half">
           <div class="mosaic-block bar">
               <div class="mosaic-overlay">
                  <div class="details">
                     <h4>Flippbidd</h4>
                     <p>Logo + Web Design + Dev</p>
-                    <a href="img/flippbidd-full.jpg" id="featured" class="full-size fa-search-plus fancybox-effects-d" alt="Front-end Development"></a>
                     <a href="http://www.flippbidd.com/front" target="_blank" class="full-size2 fa-link"></a>
                 </div>
               </div>
-             <img src="img/flippbidd-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Front-end Development by Bianca Negron"/>
+             <img src="images/flippbidd-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Front-end Development by Bianca Negron"/>
           </div><!--portfolio1-->
         </div><!-- /.col-sm-6 -->
-        <div class="col-sm-6">
+        <div class="project-half">
            <div class="mosaic-block bar">
               <div class="mosaic-overlay">
                  <div class="details">
                     <h4>Baja Meets NYC</h4>
                     <p>Logo + Web Design + Dev</p>
-                    <a href="img/bajawff-full.jpg" id="featured" class="full-size fa-search-plus fancybox-effects-d" alt="Logo and Web Design/Development"></a>
                     <a href="work/#baja" class="full-size2 fa-link"></a>
                 </div>
               </div>
-             <img src="img/bajawff-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Logo and Web Design/Development by Bianca Negron"/>
+             <img src="images/bajawff-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Logo and Web Design/Development by Bianca Negron"/>
           </div><!--portfolio2-->
         </div><!-- /.col-sm-6 -->
-        <a href="work/">View all projects</a>
+        <div class="container button"><a href="work/">View all projects</a></div>
       </div><!-- /.row -->
       </div>
       </section>
 
-<!-- ABOUT SECTION -->
-    <section id="about-me-short">
-      <div class="container marketing">
-        <div class="col-lg-12">
+    <!-- ABOUT SECTION -->
+    <section id="about-me" class="about-short">
+      <div class="container">
           <h3>A day in the life of Bianca Negron</h3>
-          <div class="about-img col-sm-4">
+          <div class="about-img">
             <img src="http://www.biancanegron.com/img/about-img.png" alt="About Bianca Negron"/>
           </div>
-          <div class="about-section col-md-10">
+          <div class="about-section">
           <p>Bianca Negron enjoys collecting ties and bow ties. Other interests include long walks in the park, reading, instagramming and spending time with family. She was born, raised and currently living in New York City. Bianca currently works as a Senior Digital Designer at Universal Music Group designing websites or promotional content for artists. She also works on freelance projects for many clients around the world. Bianca specializes in designing and developing creative, user and search engine friendly websites. She makes sure the websites are responsive/mobile-friendly, engaging, user-friendly, and aesthetically pleasing.
           <br/><br/></p>
           <a href="about/">Learn more</a><br/><br/>
         </div>
-        </div>
       </div>
     </section>
-<!-- END ABOUT SECTION -->
+    <!-- END ABOUT SECTION -->
 
-<!-- CONTACT SECTION -->
+    <!-- CONTACT SECTION -->
     <section id="contact-me">
-      <div class="container marketing">
-        <div class="col-lg-12">
+      <div class="container">
         <script type="text/javascript">
         function validateForm()
           {
@@ -254,37 +233,43 @@
             <a href="http://biancadesigns.tumblr.com/" class="tumblr-icon" target="_blank" alt="Bianca Negron on Tumblr"><i class="fa fa-tumblr"></i></a>
             <a href="http://twitter.com/biancanegron/" class="tw-icon" target="_blank" alt="Bianca Negron on Twitter"><i class="fa fa-twitter"></i></a>
           </div>
-          </div>
 
         </div>
       </div>
     </section>
-<!-- END CONTACT SECTION -->
+    <!-- END CONTACT SECTION -->
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
       <footer>
-      <div class="container marketing">
+      <div class="container">
         <p class="pull-right"><a href="#top">Back to top</a></p>
-        <p>&copy; 2007-2015 Bianca Negron. Handcrafted in New York City.
+        <p>&copy; 2007-2015 Bianca Negron, LLC. Handcrafted in New York City.
       </div><!-- /.container -->
       </footer>
 
-<!-- JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.easing.1.3.min.js"></script>
-    <script src="js/greensock.js" type="text/javascript"></script>
-    <!-- LayerSlider script files -->
-    <script src="js/layerslider.transitions.js" type="text/javascript"></script>
-    <script src="js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
-    <!-- Add fancyBox main JS and CSS files -->
-    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/holder.js"></script>
-  <script src="js/port.js"></script>
-  <!-- Initializing the slider -->
-  <script>
+
+    <script src="javascripts/jquery.js"></script>
+    <script src="javascripts/jquery.easing.1.3.min.js"></script>
+    <script src="javascripts/rotate.js" type="text/javascript"></script>
+    <script src="javascripts/site.js" type="text/javascript"></script>
+    <script type="text/javascript" src="javascripts/classie.js"></script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1200);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+    <script>
     jQuery("#layerslider").layerSlider({
       responsive: true,
       responsiveUnder: 1280,
@@ -293,8 +278,8 @@
       hoverPrevNext: false,
       skinsPath: '../layerslider/skins/'
     });
-  </script>
-  <script type="text/javascript">     
+    </script>
+    <script type="text/javascript">     
       jQuery(function($){
         
         $('.bar').mosaic({
@@ -303,62 +288,33 @@
         });
         
     </script>
-    <script type="text/javascript">
-    // New Fancy Box Code
-    $('.fancybox').fancybox();
-    // Remove padding, set opening and closing animations, close if clicked and disable overlay
-      $(".fancybox-effects-d").fancybox({
-        padding: 0,
-
-        openEffect : 'elastic',
-        openSpeed  : 150,
-
-        closeEffect : 'elastic',
-        closeSpeed  : 150,
-
-        closeClick : true,
-
-        helpers : {
-          overlay : null
+    <script>
+      var anchor = document.querySelectorAll('button');
+        
+      [].forEach.call(anchor, function(anchor){
+        var open = false;
+        anchor.onclick = function(event){
+          event.preventDefault();
+          if(!open){
+            this.classList.add('close');
+            open = true;
+          }
+          else{
+            this.classList.remove('close');
+            open = false;
+          }
         }
-      });
-    </script>
-<script type="text/javascript">
-      // <![CDATA[
-$(document).ready(function() {
-  function filterPath(string) {
-    return string
-      .replace(/^\//,'')
-      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
-      .replace(/\/$/,'');
-  }
-  $('a[href*=#]').each(function() {
-    if ( filterPath(location.pathname) == filterPath(this.pathname)
-    && location.hostname == this.hostname
-    && this.hash.replace(/#/,'') ) {
-      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-       if ($target) {
-         var targetOffset = $target.offset().top;
-         $(this).click(function() {
-           $('html, body').animate({scrollTop: targetOffset}, 1000);
-           return false;
-         });
-      }
-    }
-  });
-});
-// ]]>
+      }); 
     </script>
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-21973538-3', 'biancanegron.com');
-  ga('send', 'pageview');
+      ga('create', 'UA-21973538-3', 'biancanegron.com');
+      ga('send', 'pageview');
 
-</script>
+    </script>
   </body>
 </html>
