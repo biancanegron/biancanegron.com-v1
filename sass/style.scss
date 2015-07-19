@@ -331,6 +331,8 @@ footer {
 	
 	}
 
+.work-page #contact-me .email-me { background-color:#ffffff; }
+
 /*Social*/
 .social { float:left;width:50%;padding:25px;background-color:#cccccc;height:150px; }
 
@@ -383,7 +385,7 @@ body.fourohfour:before{content:"";display:block;position:fixed;top:0;right:0;bot
 #header .header-logo { margin-top:20px;width:215px;height:23px;-webkit-background-size:215px auto;-moz-background-size:215px auto;-o-background-size:215px auto;background-size:215px auto; }
 #portfolio-short h1, #about-me h3 { font-size:28px;line-height:0.9;margin-bottom:15px; }
 #about-me .about-section { width:100%; }
-.mosaic-block .mosaic-overlay { background-color:rgba(255,255,255,0.8);height:100% !important;bottom:0 !important; }
+.mosaic-block .mosaic-overlay { background-color:rgba(255,255,255,0.95);height:100% !important;bottom:0 !important; }
 .mosaic-block .details { margin:12px 0;position:absolute;bottom:0;width:100%;padding:0 10px; h4 { font-size:20px; } }
 #about-me { .about-img { img { width:150px; } } }
 }
@@ -399,6 +401,7 @@ body.fourohfour:before{content:"";display:block;position:fixed;top:0;right:0;bot
 
 @media screen and (max-width: 400px) {
 #about-me p { font-size:14px;line-height:1.4; }
-#contact-me form input { width:100%; }
+#contact-me .email-me a { font-size:24px; }
+.social{ padding:10px;height:190px; }
 p.ls-l { font-size:8.5px !important;line-height:8.5px !important; }
 }
