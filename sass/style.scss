@@ -59,6 +59,7 @@ footer {
 	background-color:$dark-gray;
 	padding:25px 0;
 	p { color:$gray-color;font-size:16px; }
+	i.fa.fa-heart { color: #f58e7e; }
 }
 
 /*HEADER*/
@@ -69,7 +70,7 @@ footer {
 	z-index:10;
 	height:65px;
 	background-color:rgba(42,48,60,0.7);
-	border-bottom:3px solid $blue-color;
+	border-top:3px solid $blue-color;
 	.header-logo { background-image:url(../images/bianca-logo.svg);width:281px;height:42px;float:left;display:block;position:relative;margin-top:10px;color:transparent;font:0/0 x;overflow:hidden;z-index:20;background-repeat:no-repeat;background-size:281px 42px; }
 }
 
@@ -300,10 +301,6 @@ footer {
 /*Contact*/
 #contact-me { 
 	overflow:hidden;
-	-webkit-transition: all 250ms ease-in-out;
-		-o-transition: all 250ms ease-in-out;
-		transition: all 250ms ease-in-out;
-		-moz-transition: all 250ms ease-in-out;
 	h3 { text-align:center;font-size:25px;margin-bottom:20px;color:#aaaaaa; }
 	.email-me { 
 		padding:25px;
@@ -320,13 +317,14 @@ footer {
 		border-left:none;
 		border-right:none;
 		border-bottom:4px dashed #aaaaaa;
-		padding: 11px 0 0;
+		padding: 11px 0 3px;
 		-webkit-transition: border-color 250ms ease-in-out;
 		  -moz-transition: border-color 250ms ease-in-out;
 		  -o-transition: border-color 250ms ease-in-out;
 		  transition: border-color 250ms ease-in-out;
 		margin: 10px 0;
 		&:hover { outline:none;border-bottom:4px dashed $blue-color; }
+
 	}
 
 	}
@@ -350,6 +348,7 @@ footer {
 			font-size:30px;
 			line-height:65px;
 			color:#ffffff; 
+			border-radius:35px;
 
 			
 			&.insta-icon:hover { background-color:#3f729b; }
@@ -378,13 +377,13 @@ body.fourohfour:before{content:"";display:block;position:fixed;top:0;right:0;bot
 }
 
 @media screen and (max-width: 768px) {
-#header { background:$blue-color;border-bottom:1px solid rgba(0, 0, 0, 0.25); }
+#header { background:$blue-color;border-bottom:3px solid rgba(0, 0, 0, 0.25);border-top:none; }
 #portfolio-short .row .container.button a, #about-me a, #contact-me form input#send { width:100%;display:block;clear:both; }
 #portfolio.port-long .controls ul li.button.filter { margin-bottom:5px; }
 #header .header-logo { margin-top:20px;width:215px;height:23px;-webkit-background-size:215px auto;-moz-background-size:215px auto;-o-background-size:215px auto;background-size:215px auto; }
-#portfolio-short h1, #about-me h3, #contact-me h3 { font-size:28px;line-height:0.9;margin-bottom:15px; }
+#portfolio-short h1, #about-me h3 { font-size:28px;line-height:0.9;margin-bottom:15px; }
 #about-me .about-section { width:100%; }
-.mosaic-block .mosaic-overlay { background-color:rgba(255,255,255,0.9);height:100% !important;bottom:0 !important; }
+.mosaic-block .mosaic-overlay { background-color:rgba(255,255,255,0.8);height:100% !important;bottom:0 !important; }
 .mosaic-block .details { margin:12px 0;position:absolute;bottom:0;width:100%;padding:0 10px; h4 { font-size:20px; } }
 #about-me { .about-img { img { width:150px; } } }
 }
@@ -392,6 +391,10 @@ body.fourohfour:before{content:"";display:block;position:fixed;top:0;right:0;bot
 @media screen and (max-height: 30.5em) {
   .overlay nav{height:70%;font-size:34px;}
   .overlay ul li{min-height:34px;}
+}
+
+@media screen and (max-width: 920px) {
+  #contact-me .email-me, .social { width:100%; }
 }
 
 @media screen and (max-width: 400px) {
