@@ -187,43 +187,11 @@
 
     <!-- CONTACT SECTION -->
     <section id="contact-me">
-      <div class="container">
-        <script type="text/javascript">
-        function validateForm()
-          {
-            var x=document.forms["myForm"]["name"].value;
-        if (x==null || x=="")
-         {
-         alert("First name must be filled out");
-         return false;
-          }
-        var x=document.forms["myForm"]["email"].value;
-        var atpos=x.indexOf("@");
-        var dotpos=x.lastIndexOf(".");
-        if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
-          {
-          alert("Not a valid e-mail address");
-        return false;
-        }
-          var x=document.forms["myForm"]["message"].value;
-        if (x==null || x=="")
-         {
-         alert("You must enter a message");
-         return false;
-          }
-      }
-      </script>
-        <div class="contact-section">
+      <div class="email-me">
           <h3>Say Hello</h3>
-          <p>I'm working full-time with <a href="http://www.universalmusic.com" target="_blank">Universal Music Group</a>, the global music leader with strong market positions in recorded music, music publishing, and merchandising, so I'm not accepting freelance requests. If you're passionate about any upcoming projects, I'm always happy to talk about ways to collaborate. Feel free contact me with any questions, comments or just to say hey.</p>
-          <form id="contact-form" name="myForm" action="sendmail.php" method="post" onsubmit="return validateForm();">
-            <input type="text" name="name" class="required left" placeholder="Enter your name.." />
-                      <input type="text" name="source" class="source" placeholder="How did you find me?" /><br />
-                <input type="text" name="email" class="required left" placeholder="Your e-mail address so I can reply.." />
-                  <input type="text" name="subject" class="" placeholder="Subject.." />
-                      <textarea name="message" rows="10" cols="40" class="required" placeholder="Your message.."></textarea><span class="errors"></span>
-                      <input type="submit" id="send" name="submit" class="submit" value="Send message" />
-          </form>
+          <a href="mailto:someone@yoursite.com?subject=Hello%20Bianca,%20Let's%20Work%20Together!&body=(Answering%20these%20questions%20will%20help%20us%20both%20determine%20if%20we're%20a%20great%20fit%20to%20work%20together).%0A%0A%0AHere's%20a%20little%20about%20me%20(company,%20name,%20title,%20phone%20number,%20etc.):%0A%0A%0A%0AHere's%20a%20little%20about%20my%20project%20(size%20of%20the%20project,%20technologies%20involved,%20etc.):%0A%0A%0A%0AHere's%20a%20little%20about%20my%20timeline%20(start%20date,%20end%20date):%0A%0A%0A%0AHere's%20a%20little%20about%20my%20budget%20(greater%20than%20$5,000,%20between%20$2,000%20and%20$5,000,%20between%20$1,000%20and%20$2,000,%20less%20than%20$1,000):%0A%0A%0A%0A%0ALet's%20build%20something%20beautiful!%0A%0A%0A%0ASincerely,%0A%0A%0A%0A">hello@biancanegron.com</a>
+      </div>
+        <div class="social">
           <div class="my-icons">
             <a href="http://instagram.com/laviede" class="insta-icon" target="_blank" alt="Bianca Negron on Instagram"><i class="fa fa-instagram"></i></a>
             <a href="http://codepen.io/biancanegron/" class="code-icon" target="_blank" alt="Bianca Negron on Codepen"><i class="fa fa-codepen"></i></a>
@@ -232,9 +200,8 @@
             <a href="http://biancadesigns.tumblr.com/" class="tumblr-icon" target="_blank" alt="Bianca Negron on Tumblr"><i class="fa fa-tumblr"></i></a>
             <a href="http://twitter.com/biancanegron/" class="tw-icon" target="_blank" alt="Bianca Negron on Twitter"><i class="fa fa-twitter"></i></a>
           </div>
-
         </div>
-      </div>
+
     </section>
     <!-- END CONTACT SECTION -->
 
