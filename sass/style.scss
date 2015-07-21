@@ -289,7 +289,7 @@ footer {
 	padding:30px 0;
 	h3 { text-align:center;font-size:32px;margin-bottom:20px; }
 	p { font-size:20px;font-style:italic;line-height:1.4; }
-	a { margin:0 auto;display:inline-block;background:$blue-color;font-size:16px;color:#ffffff;padding:12px 25px;text-decoration:none;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;transition-duration:0.3s;transition-property:opacity, background, top; &:hover { opacity:0.7; } }
+	/*a.button { margin:0 auto;display:inline-block;background:$blue-color;font-size:16px;color:#ffffff;padding:12px 25px;text-decoration:none;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;transition-duration:0.3s;transition-property:opacity, background, top; &:hover { opacity:0.7; } }*/
 	.about-img { float:none;margin:0 auto;text-align:center;position:relative;z-index:1; img { width:200px; } }
 	.about-section { float:none;text-align:center;width:75%;margin:0 auto;padding:20px 20px 0; }
 }
