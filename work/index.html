@@ -29,7 +29,7 @@
         </button></span>
         <nav class="navigation">
           <ul>
-            <!--<li><a class="navigation-link" href="/about">About</a></li>-->
+             <!--<li><a class="navigation-link" href="/about">About</a></li>-->
             <li><a class="navigation-link selected" href="/work">Work</a></li>
             <li><a class="navigation-link" href="/resume/biancanegron-resume.pdf">Résumé</a></li>
             <li><a class="navigation-link" href="#contact-me">Contact</a></li>
@@ -38,7 +38,7 @@
         <div class="overlay slide-overlay">
         <nav>
           <ul>
-            <!--<li><a class="navigation-link" href="/about">About</a></li>-->
+             <!--<li><a class="navigation-link" href="/about">About</a></li>-->
             <li><a class="navigation-link" href="/work">Work</a></li>
             <li><a class="navigation-link" href="/resume/biancanegron-resume.pdf">Résumé</a></li>
             <li><a class="navigation-link" href="#contact-me">Contact</a></li>
@@ -49,13 +49,29 @@
     </header>
 
 <!-- PROJECTS (NEW) -->
-<section id="portfolio" class="port-long">
 
-      <section id="portfolio-short">
+      <section id="portfolio" class="port-long">
+
+      <div class="controls">  
+      <div class="container">
+        <ul>
+          <h3>Select Category:</h3>
+          <li class="button filter active" data-filter=".all">Show All</li>
+          <li class="button filter" data-filter=".cat-1">UX, Web Design</li>
+          <li class="button filter" data-filter=".cat-2">UX, UI Design</li>
+          <li class="button filter" data-filter=".cat-3">Branding</li>
+          <li class="button filter" data-filter=".cat-4">Universal Music Group</li>
+          <li class="button filter" data-filter=".cat-5">Latina Magazine</li>
+        </ul>
+        </div>
+      </div><!--Controls End-->
+
+        <div id="Container">
+          <section id="portfolio-short">
       <div class="container">
         <div class="row">
         <div class="container"><h1>Projects</h1></div>
-        <div class="project-half">
+        <div class="project-half mix cat-1 cat-4 all" data-my-order="1">
             <div class="mosaic-block bar">
                 <div class="mosaic-overlay">
                    <div class="details">
@@ -67,7 +83,7 @@
                <img src="../images/charles-hm-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Web Design by Bianca Negron"/>
             </div><!--portfolio3-->
           </div><!-- /.col-sm-6 -->
-        <div class="project-half">
+        <div class="project-half mix cat-1 cat-4 all" data-my-order="2">
             <div class="mosaic-block bar">
                 <div class="mosaic-overlay">
                    <div class="details">
@@ -79,7 +95,7 @@
                <img src="../images/2chainz-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Web Design by Bianca Negron"/>
             </div><!--portfolio3-->
           </div><!-- /.col-sm-6 -->
-        <div class="project-half">
+        <div class="project-half mix cat-1 cat-4 all" data-my-order="3">
             <div class="mosaic-block bar">
                 <div class="mosaic-overlay">
                    <div class="details">
@@ -91,7 +107,7 @@
                <img src="../images/cashmoney-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Web Design by Bianca Negron"/>
             </div><!--portfolio3-->
           </div><!-- /.col-sm-6 -->
-        <div class="project-half">
+        <div class="project-half mix cat-1 all" data-my-order="4">
             <div class="mosaic-block bar">
                 <div class="mosaic-overlay">
                    <div class="details">
@@ -103,7 +119,7 @@
                <img src="../images/sharefund-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Front-end Development by Bianca Negron"/>
             </div><!--portfolio00-->
           </div><!-- /.col-sm-6 -->
-          <div class="project-half">
+          <div class="project-half mix cat-1 all" data-my-order="5">
                       <div class="mosaic-block bar">
                 <div class="mosaic-overlay">
                    <div class="details">
@@ -115,7 +131,7 @@
                <img src="../images/shiatsu-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Web Design/Development by Bianca Negron"/>
             </div><!--portfolio4-->
           </div><!-- /.col-sm-6 -->
-          <div class="project-half">
+          <div class="project-half mix cat-3 all" data-my-order="6">
              <div class="mosaic-block bar">
                 <div class="mosaic-overlay">
                    <div class="details">
@@ -126,7 +142,7 @@
                <img src="../images/thorium-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Logo and Web Design/Development by Bianca Negron"/>
             </div><!--portfolio0-->
           </div><!-- /.col-sm-6 -->
-        <div class="project-half">
+        <div class="project-half mix cat-1 all" data-my-order="7">
             <div class="mosaic-block bar">
                 <div class="mosaic-overlay">
                    <div class="details">
@@ -138,7 +154,7 @@
                <img src="../images/flippbidd-737x401.jpg" class="mosaic-backdrop img-responsive" alt="Front-end Development by Bianca Negron"/>
             </div><!--portfolio1-->
           </div><!-- /.col-sm-6 -->
-          <div class="project-half">
+          <div class="project-half mix cat-1 cat-5 all" data-my-order="8">
              <div class="mosaic-block bar">
                 <div class="mosaic-overlay">
                    <div class="details">
@@ -154,7 +170,9 @@
       </div>
       </section>
 
-</section>
+        </div>
+
+      </section>
 
 <!-- CONTACT SECTION -->
     <section id="contact-me">
@@ -175,7 +193,6 @@
 
     </section>
     <!-- END CONTACT SECTION -->
-<!-- END CONTACT SECTION -->
 
       <!-- FOOTER -->
       <footer>
@@ -192,7 +209,7 @@
     <script type="text/javascript" src="../javascripts/classie.js"></script>
     <script type="text/javascript">
     $(function(){
-      $('#Grid').mixitup();
+      $('#Container').mixItUp();
     });
     </script>
     <script>
