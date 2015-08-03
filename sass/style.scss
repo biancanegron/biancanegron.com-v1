@@ -88,8 +88,8 @@ footer {
 
 @mixin line {
   display: inline-block;
-  width: $button-size;
-  height: $button-size/7;
+  width: $button-size/1.1;
+  height: $button-size/13;
   background: $light-gray-color;
   border-radius: $button-size/14; 
   transition: $transition;
@@ -380,10 +380,12 @@ body.fourohfour:before{content:"";display:block;position:fixed;top:0;right:0;bot
 }
 
 @media screen and (max-width: 768px) {
-#header { background:$blue-color;border-bottom:3px solid rgba(0, 0, 0, 0.25);border-top:none; }
+#header { background:$blue-color;border-bottom:3px solid rgba(0, 0, 0, 0.25);height:55px;border-top:none; }
+#portfolio-short .project-half { margin-bottom:15px; }
+.navigation-icon { margin-top:11px; }
 #portfolio-short .row .container.button a, #about-me a { width:100%;display:block;clear:both; }
 #portfolio.port-long .controls ul li.button.filter { margin-bottom:5px; }
-#header .header-logo { margin-top:20px;width:215px;height:23px;-webkit-background-size:215px auto;-moz-background-size:215px auto;-o-background-size:215px auto;background-size:215px auto; }
+#header .header-logo { margin-top:18px;width:215px;height:17px;-webkit-background-size:215px auto;-moz-background-size:215px auto;-o-background-size:215px auto;background-size:215px auto; }
 #portfolio-short h1, #about-me h3 { font-size:28px;line-height:0.9;margin-bottom:15px; }
 #about-me .about-section { width:100%; }
 .mosaic-block .mosaic-overlay { background-color:rgba(255,255,255,0.95);bottom:0 !important;height:72px; }
