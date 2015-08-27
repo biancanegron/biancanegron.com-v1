@@ -17,7 +17,7 @@ module.exports = function(grunt) {
           'javascripts/lib/*.js',
           'Gruntfile.js'
         ],
-        tasks: ['jshint']
+        tasks: ['uglify']
       }
     },
     compass: {
