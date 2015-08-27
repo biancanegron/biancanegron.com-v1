@@ -29,6 +29,14 @@ module.exports = function(grunt) {
         }
       }
     },
+    uglify: {
+      my_target: {
+        files: {
+          'javascripts/site.min.js': ['javascripts/site.js'],
+          'javascripts/fourohfour.min.js': ['javascripts/fourohfour.js']
+        }
+      }
+    },
     jshint: {
       options: {
         jshintrc: '.jshintrc'
@@ -42,8 +50,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Register the default tasks.
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', ['watch', 'jshint', 'qunit', 'concat', 'uglify']);
 
 };
