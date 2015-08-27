@@ -48,7 +48,7 @@ img{ max-width:100%;height:auto;vertical-align:middle; }
 
 /* NEW typed out Header */
 
-.typed-cursor{
+.typed-cursor {
             opacity: 1;
             font-weight: 100;
             -webkit-animation: blink 0.8s infinite;
@@ -57,31 +57,37 @@ img{ max-width:100%;height:auto;vertical-align:middle; }
             -o-animation: blink 0.8s infinite;
             animation: blink 0.8s infinite;
         }
-        @-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
         }
-        @-webkit-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
+
+        @-webkit-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
         }
-        @-moz-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
+
+        @-moz-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
         }
-        @-ms-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
+
+        @-ms-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        } 
+
+        @-o-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
         }
-        @-o-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
+
 #sub-header { width:100%;padding-top:65px;height:410px;position:relative;-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d; }
 .type-wrap { font-family:'adobe-caslon-pro',serif;font-style:italic;font-size:3.2em;line-height:1.1;margin:0 auto;width:90%;text-align:center;position:relative;top:50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%); }
 
