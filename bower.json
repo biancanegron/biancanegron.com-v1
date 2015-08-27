@@ -1,0 +1,23 @@
+{
+  "name": "biancanegron.com-v1",
+  "version": "0.0.0",
+  "homepage": "https://github.com/biancanegron/biancanegron.com-v1",
+  "authors": [
+    "Bianca Negron <bianca.i.negron@gmail.com>"
+  ],
+  "description": "Bianca Negrons Website",
+  "main": "javascripts/site.min.js, sass/style.scss",
+  "keywords": [
+    "style",
+    "index",
+    "site"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
