@@ -23,7 +23,7 @@
   <body>
     <header id="header">
       <div class="container">
-        <a class="header-logo" href="/">B<span class="blue">.</span></a>
+        <a class="header-logo" href="/"><span class="hide-show left">Bianca Negron</span><span class="blue left">.</span></a>
         <span class="navigation-icon" id="navigation-icon"><button type="button" role="button" aria-label="Toggle Navigation" class="lines-button x2" id="trigger-overlay">
         <span class="lines"></span>
         </button></span>
@@ -48,28 +48,15 @@
       </div>
     </header>
 
-    <!-- NEW SLIDER -->
-    <div id="full-slider-wrapper">
-      <div id="layerslider" style="width:100%;height:360px;">
-        <div class="ls-slide" data-ls="slidedelay:7000;transition2d:1;timeshift:-1000;">
-          <h1 class="ls-l" style="top:50%;left:50%;white-space:nowrap;color:#333333;font-size:2.8rem;line-height:1.1;font-weight:600;text-align:center;font-style:italic;" data-ls="offsetyin:300;durationin:2000;offsetxout:-900;parallaxlevel:4;">Hello, my name is Bianca.  I am a Designer &amp; <br/> Front-End Developer living in NYC.</h1>
-          <span class="ls-l ls-linkto-3 fa fa-angle-left" style="top:50%;left:5%;white-space:nowrap;" data-ls="offsetxin:-50;delayin:1000;offsetxout:-50;parallaxlevel:3;" alt=""></span><span class="ls-l ls-linkto-2 fa fa-angle-right" style="top:50%;left:95%;white-space:nowrap;" data-ls="offsetxin:50;delayin:1000;offsetxout:50;parallaxlevel:3;" alt=""></span>
-        </div><!--slide1-->
-        <div class="ls-slide" data-ls="slidedelay:7000;transition2d:1;timeshift:-1000;">
-          <img class="ls-l" style="top:40px;left:74%;white-space:nowrap;" data-ls="offsetxin:600;durationin:2000;offsetxout:600;parallaxlevel:1;" src="sliderimages/latina-website-layer2.png" alt=""><img class="ls-l" style="top:100px;left:520px;white-space: nowrap;" data-ls="offsetxin:900;durationin:2000;offsetxout:900;parallaxlevel:4;" src="sliderimages/latina-mobile-layer2.png" alt="">
-          <p class="ls-l" style="top:70px;left:90px;width:28%;font-size:24px;color:#333333;line-height:28px;white-space: normal;" data-ls="offsetxin:0;durationin:2000;delayin:2000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% top 0;offsetxout:-400;parallaxlevel:8;">
-            I strive to create pixel perfected design for clients and use it to hand-code a captivating and responsive website. Turning great ideas into riveting design and code is my forte.
-          </p>
-          <span class="ls-l ls-linkto-1 fa fa-angle-left" style="top:50%;left:5%;white-space:nowrap;" data-ls="offsetxin:-50;delayin:1000;offsetxout:-50;parallaxlevel:3;" alt=""></span><span class="ls-l ls-linkto-3 glyphicon fa fa-angle-right" style="top:50%;left:95%;white-space:nowrap;" data-ls="offsetxin:50;delayin:1000;offsetxout:50;parallaxlevel:3;" alt=""></span>
-        </div><!--slide2-->
-        <div class="ls-slide" data-ls="slidedelay:7000;transition2d:1;timeshift:-1000;">
-          <img class="ls-l" style="top:0;left:80px;white-space:nowrap;" data-ls="offsetxin:-600;durationin:2000;offsetxout:-600;parallaxlevel:4;" src="sliderimages/shiatsu-bcs-layer2.png" alt="">
-          <p class="ls-l" style="top:70px;left:72%;text-align:right;width:40%;font-size:24px;color:#333333;line-height:28px;white-space: normal;" data-ls="offsetxin:0;durationin:2000;delayin:2000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% top 0;offsetxout:400;parallaxlevel:8;">
-            My passion is to make brands and projects come to life through design. I create unique and memorable logos, business cards, letterheads, brochures, flyers, posters, t-shirts, packaging and more for cool folks around the world. </p>
-          <span class="ls-l ls-linkto-2 fa fa-angle-left" style="top:50%;left:5%;white-space:nowrap;" data-ls="offsetxin:-50;delayin:1000;offsetxout:-50;parallaxlevel:3;" alt=""></span><span class="ls-l ls-linkto-1 fa fa-angle-right" style="top:50%;left:95%;white-space:nowrap;" data-ls="offsetxin:50;delayin:1000;offsetxout:50;parallaxlevel:3;" alt=""></span>
-        </div><!--slide3-->
-      </div>
-    </div>
+      <div id="sub-header">
+
+		<div class="type-wrap">
+        	<div class="container">
+            	<p><span id="typed"></span></p>
+            </div>
+        </div>
+
+        </div>
 
     <!-- PROJECTS -->
       <section id="portfolio-short">
@@ -194,6 +181,33 @@
     <script src="javascripts/rotate.js" type="text/javascript"></script>
     <script src="javascripts/site.js" type="text/javascript"></script>
     <script type="text/javascript" src="javascripts/classie.js"></script>
+    <script src="javascripts/typed.js" type="text/javascript"></script>
+    <script>
+    $(function(){
+
+        $("#typed").typed({
+            strings: ["Hello, my name is Bianca Negron.", "I am a Designer &amp; Front-End <br/> Developer based in New York City.", "I focus on creating &amp; developing <br/> brands and digital experiences."],
+            typeSpeed: 30,
+            backDelay: 500,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>
     <script>
       $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
@@ -209,16 +223,6 @@
           }
         });
       });
-    </script>
-    <script>
-    jQuery("#layerslider").layerSlider({
-      responsive: true,
-      responsiveUnder: 1280,
-      layersContainer: 1280,
-      skin: 'noskin',
-      hoverPrevNext: false,
-      skinsPath: '../layerslider/skins/'
-    });
     </script>
     <script type="text/javascript">     
       jQuery(function($){
