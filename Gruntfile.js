@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+var mozjpeg = require('imagemin-mozjpeg');
 
   // Project configuration.
   grunt.initConfig({
@@ -37,6 +38,28 @@ module.exports = function(grunt) {
         }
       }
     },
+    imagemin: {                          // Task
+    static: {                          // Target
+      options: {                       // Target options
+        optimizationLevel: 3,
+        svgoPlugins: [{ removeViewBox: false }],
+        use: [mozjpeg()]
+      },
+      // files: {                         // Dictionary of files
+    //    'dist/img.png': 'src/img.png', // 'destination': 'source'
+    //    'dist/img.jpg': 'src/img.jpg',
+   //     'dist/img.gif': 'src/img.gif'
+   //   }
+    },
+    dynamic: {                         // Another target
+      files: [{
+        expand: true,                  // Enable dynamic expansion
+        cwd: 'images/',                   // Src matches are relative to this path
+        src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+        dest: 'opt-images/'                  // Destination path prefix
+      }]
+    }
+  },
     jshint: {
       options: {
         jshintrc: '.jshintrc'
@@ -51,8 +74,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Register the default tasks.
-  grunt.registerTask('default', ['watch', 'jshint', 'uglify']);
-
+  grunt.registerTask('default', ['watch', 'jshint', 'uglify', 'imagemin']);
 };
