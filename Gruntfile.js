@@ -41,15 +41,13 @@ var mozjpeg = require('imagemin-mozjpeg');
     imagemin: {                          // Task
     static: {                          // Target
       options: {                       // Target options
-        optimizationLevel: 3,
+        optimizationLevel: 5,
         svgoPlugins: [{ removeViewBox: false }],
         use: [mozjpeg()]
       },
-      // files: {                         // Dictionary of files
-    //    'dist/img.png': 'src/img.png', // 'destination': 'source'
-    //    'dist/img.jpg': 'src/img.jpg',
-   //     'dist/img.gif': 'src/img.gif'
-   //   }
+      //files: {                         // Dictionary of files
+      //  'images/about-img.png': 'images/about-img.png' // 'destination': 'source'
+      // }
     },
     dynamic: {                         // Another target
       files: [{
