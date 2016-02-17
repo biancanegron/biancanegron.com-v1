@@ -54,7 +54,7 @@ var mozjpeg = require('imagemin-mozjpeg');
         expand: true,                  // Enable dynamic expansion
         cwd: 'images/',                   // Src matches are relative to this path
         src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
-        dest: 'opt-images/'                  // Destination path prefix
+        dest: 'images/'                  // Destination path prefix
       }]
     }
   },
